@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: #e6e2d7;
+  color: #000;
+  font-family: 'Noto Serif JP', serif;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+li {
+  list-style: none;
+}
+
+.site-title {
+  line-height: 1px;
+  margin-left: 60px;
+}
+
+.site-title a {
+  display: block;
+}
+
+.site-title img {
+  width: 40px;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/mainvisual-pc.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding: 60px 80px;
+  margin-bottom: 180px;
+  /* 「オンラインストアを見る」ボタンを配置するためのposition */
+  position: relative;
+  writing-mode: vertical-rl;
+}
+
+/*
+「オンラインストアを見る」ボタン
+backgroundのrgbaで透過設定
+*/
+#header .onlinestore {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px;
+  position: absolute;
+  left: 40px;
+  bottom: 30px;
+}
+
+#header .onlinestore a {
+  display: block;
+  border: solid 1px #ccc;
+  padding: 30px 18px;
+}
+
+#header .onlinestore a:hover {
+  opacity: 0.7;
+}
+
+#nav li {
+  margin-left: 25px;
+}
+
+/*-------------------------------------------
+News
+-------------------------------------------*/
+/*
+「display: flex」で横並びに配置
+「row-reverse」で順序を入れ替える。
+*/
+#news {
+  margin-bottom: 180px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#news .section-title {
+  font-weight: normal;
+  line-height: 1;
+  writing-mode: vertical-rl;
+}
+
+#news .section-title .en {
+  display: block;
+  font-size: 0.875rem;
+  margin-left: 15px;
+}
+
+#news .section-title .ja {
+  display: block;
+  font-size: 2.25rem;
+  letter-spacing: 0.1em;
+}
+
+#news .list {
+  padding: 80px 100px 0 0;
+  writing-mode: vertical-rl;
+}
+
+#news .list dt {
+  border-right: solid 1px #000;
+  font-size: 0.75rem;
+  padding: 15px 30px 15px 5px;
+}
+
+#news .list dd {
+  padding: 15px 0 15px 30px;
+}
